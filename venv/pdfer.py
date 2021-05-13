@@ -7,9 +7,14 @@ from PIL import Image
 
 
 manga_folder=r'C:\Users\Drastis\PycharmProjects\MANGA_DOWNLOADER\venv\Downloads\All_You_Need_Is_Kill'
+manga_folder=r'C:\Users\Drastis\Desktop\manganator\Downloads'
+manga_folder+=r'''\Tower_Of_God'''
 chapters=os.listdir(manga_folder)
 
 for chapter in chapters:
+    if '.pdf' in chapter or chapter+'.pdf' in chapters:continue
+
+
     images_path=manga_folder+'\\'+chapter
     images_folder = os.listdir(images_path)
 
@@ -51,7 +56,9 @@ for chapter in chapters:
     layout_fun = img2pdf.get_layout_fun(a4inpt)
 
     with open(name,"wb") as f:
-        f.write(img2pdf.convert(im_list,layout_fun=layout_fun))
+        f.write(img2pdf.convert(im_list))#,layout_fun=layout_fun))
+        # f.write(img2pdf.convert(im_list,layout_fun=layout_fun))
+
 
 
 #
