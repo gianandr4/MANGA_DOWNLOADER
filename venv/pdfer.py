@@ -5,7 +5,7 @@ import img2pdf
 from PIL import Image
 
 
-
+'merger'
 manga_folder=r'C:\Users\Drastis\PycharmProjects\MANGA_DOWNLOADER\venv\Downloads\All_You_Need_Is_Kill'
 manga_folder=r'C:\Users\Drastis\Desktop\manganator\Downloads'
 manga_folder+=r'''\Tower_Of_God'''
