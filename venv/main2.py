@@ -5,7 +5,7 @@ from PIL import Image
 ##########################################
 clear = lambda: os.system('cls')  # clear screen
 
-
+'pull requests'
 def welcome():
     w_inputs = ['UPDATE', 'EXIT', '', 'HELP', 'CHECK','CONFIG']
     print('''WELCOME TO MANGANATOR''')
@@ -91,6 +91,7 @@ def welcome():
                 x=input('(select item )>>')
                 clear()
                 print(w_list[int(x)])
+
 
 
 
